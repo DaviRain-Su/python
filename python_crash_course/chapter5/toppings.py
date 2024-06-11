@@ -1,16 +1,16 @@
 # compare the value of the variable requested_topping to the string 'anchovies'
-requested_topping = 'mushrooms'
+requested_topping = "mushrooms"
 
-if requested_topping != 'anchovies':
+if requested_topping != "anchovies":
     print("Hold the anchovies!")
 
 requested_toppings = ["mushrooms", "extra cheese", "green peppers"]
 
-if 'mushrooms' in requested_toppings:
+if "mushrooms" in requested_toppings:
     print("Adding mushrooms.")
-elif 'pepperoni' in requested_toppings:
+elif "pepperoni" in requested_toppings:
     print("Adding pepperoni.")
-elif 'extra cheese' in requested_toppings:
+elif "extra cheese" in requested_toppings:
     print("Adding extra cheese.")
 
 print("\nFinished making your pizza!")
@@ -32,7 +32,14 @@ if requested_toppings:
 else:
     print("Are you sure you want a plain pizza?")
 
-avilable_toppings = ["mushrooms", "olives", "green peppers", "pepperoni", "pineapple", "extra cheese"]
+avilable_toppings = [
+    "mushrooms",
+    "olives",
+    "green peppers",
+    "pepperoni",
+    "pineapple",
+    "extra cheese",
+]
 requested_toppings = ["mushrooms", "french fries", "extra cheese"]
 
 for requested_topping in requested_toppings:

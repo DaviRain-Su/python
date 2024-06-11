@@ -1,5 +1,5 @@
-#name = input("Please enter your name:")
-#print("Hello, " + name + "!")
+# name = input("Please enter your name:")
+# print("Hello, " + name + "!")
 
 prompt = "If you tell us who you are, we can personalize the message you see."
 prompt += "\nWhat is your first name?"

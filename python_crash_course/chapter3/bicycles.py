@@ -4,7 +4,7 @@ print(bicycles[1])
 print(bicycles[0].title())
 
 for bike in bicycles:
-    print("->",bike)
+    print("->", bike)
 
 # index last item
 print(bicycles[-1].upper())
