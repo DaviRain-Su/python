@@ -1,6 +1,6 @@
 import json
 
-filename = '../data/population_data.json'
+filename = "../data/population_data.json"
 with open(filename) as f:
     pop_data = json.load(f)
 

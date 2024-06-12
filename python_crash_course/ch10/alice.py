@@ -1,4 +1,5 @@
-#filename = "../data/alice.txt"
+# filename = "../data/alice.txt"
+
 
 def count_words(filename):
     try:
@@ -11,6 +12,7 @@ def count_words(filename):
         words = contents.split()
         num_words = len(words)
         print("The file " + filename + " has about " + str(num_words) + " Words.")
+
 
 filenames = ["alice.txt", "siddhartha.txt", "moby_dick.txt", "little_women.txt"]
 for filename in filenames:

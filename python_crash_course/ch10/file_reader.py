@@ -1,9 +1,11 @@
 # with keyword closes the file once access to it is no longer needed
 with open("../data/pi_digits.txt") as file_object:
-    #contents = file_object.read()
-    #print(contents.rstrip())
+    # contents = file_object.read()
+    # print(contents.rstrip())
     for line in file_object:
-        print(line.rstrip()) # rstrip() removes the extra blank line that is created by print function
+        print(
+            line.rstrip()
+        )  # rstrip() removes the extra blank line that is created by print function
 
 print("----------------------------")
 

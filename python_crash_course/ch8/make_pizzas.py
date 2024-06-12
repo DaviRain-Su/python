@@ -7,8 +7,8 @@
 # #3
 # from pizza import make_pizza as mp # import the function make_pizza() from pizza.py and give it an alias mp
 # #4
-from pizza import * # import all functions from pizza.py
+from pizza import *  # import all functions from pizza.py
 
 
-make_pizza(16, 'pepperoni')
-make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+make_pizza(16, "pepperoni")
+make_pizza(12, "mushrooms", "green peppers", "extra cheese")

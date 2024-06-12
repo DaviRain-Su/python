@@ -7,7 +7,7 @@ filename = "../data/sitka_weather_2014.csv"
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
-    #print(header_row)
+    # print(header_row)
 
     for index, column_header in enumerate(header_row):
         print(index, column_header)
@@ -25,17 +25,16 @@ with open(filename) as f:
             dates.append(current_date)
             lows.append(low)
 
-
     fig = plt.figure(dpi=128, figsize=(10, 6))
-    plt.plot(dates, highs, c='red')
-    plt.plot(dates, lows, c='blue')
-    plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
+    plt.plot(dates, highs, c="red")
+    plt.plot(dates, lows, c="blue")
+    plt.fill_between(dates, highs, lows, facecolor="blue", alpha=0.1)
 
     title = "Daily high temperatures - 2014 \n Death Valley, CA"
     plt.title(title, fontsize=24)
-    plt.xlabel('', fontsize=16)
+    plt.xlabel("", fontsize=16)
     fig.autofmt_xdate()
     plt.ylabel("Temperature (F)", fontsize=16)
-    plt.tick_params(axis='both', which='major', labelsize=16)
+    plt.tick_params(axis="both", which="major", labelsize=16)
     plt.show()
-    #print(highs)
+    # print(highs)

@@ -1,8 +1,10 @@
 from typing import List
 
+
 def remove_invalid(items: List[int]):
-    """剔除 items 中的无效值 """
+    """剔除 items 中的无效值"""
     return [item for item in items if item > 0]
+
 
 # 用户输入可能会有空格，使用strip()函数去除空格
 def extract_username(s):
@@ -12,14 +14,15 @@ def extract_username(s):
     else:
         return False
 
-#input_string = input("Enter a string: ")
-#value = extract_username(input_string.strip())
-#print(value)
+
+# input_string = input("Enter a string: ")
+# value = extract_username(input_string.strip())
+# print(value)
 
 author = "piglei"
 print("hello, {}".format(author))
 
-author, reader  = "piglei", "raymond"
+author, reader = "piglei", "raymond"
 print("change before -> author: {}, reader: {}".format(author, reader))
 author, reader = reader, author
 print("change after -> author: {}, reader: {}".format(author, reader))
